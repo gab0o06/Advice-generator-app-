@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url("../font/LeagueSpartan-Regular.ttf");
+}
+
+@font-face {
+  font-family: "LeagueSpartanBold";
+  src: url("../font/LeagueSpartan-Bold.ttf");
+}
+
+body {
+  background-color: #202632;
+  color: #eee;
+  font-family: "LeagueSpartan";
+}
+
+.advice__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice__container-bg {
+  /* min-width: 450px; */
+  width: 450px;
+  height: 250px;
+  background-color: #313a49;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+}
+
+.advice__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.advice__title {
+  color: #53ffab;
+  font-size: 0.85em;
+  text-size-adjust: 100px;
+  letter-spacing: 2px;
+  font-family: "LeagueSpartanBold";
+}
+
+.advice__text-container {
+  margin-left: 45px;
+  margin-right: 45px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60% 40%;
+}
+
+.advice__text {
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 0px;
+}
+
+.advice__line-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-self: center;
+}
+
+.advice__line-divisor {
+  padding: 0.5px 75px;
+  background-color: #535e70;
+  margin-top: 10px;
+}
+
+.right {
+  margin-left: auto;
+}
+
+.advice__line-divisor {
+  color: #eee;
+}
+
+.advice__pause-svg {
+  margin-bottom: 15px;
+}
+
+.advice__img-aleatorio {
+  width: 50px;
+  position: relative;
+  bottom: 25px;
+  left: 200px;
+}
+
+.advice__img-aleatorio:hover {
+  width: 60px;
+  border-radius: 999999px;
+  -webkit-border-radius: 999999px;
+  -moz-border-radius: 999999px;
+  -ms-border-radius: 999999px;
+  -o-border-radius: 999999px;
+  position: relative;
+  bottom: 30px;
+  left: 195px;
+  box-shadow: 0 0 25px #53ffab;
+}
+
+@media screen and (max-width: 480px) {
+  .advice__container-bg {
+    width: 320px;
+    height: 300px;
+  }
+  .advice__img-aleatorio {
+    width: 50px;
+    position: relative;
+    bottom: 25px;
+    left: 135px;
+  }
+  .advice__img-aleatorio:hover {
+    width: 50px;
+    position: relative;
+    bottom: 25px;
+    left: 135px;
+    box-shadow: 0 0 0px #53ffab;
+  }
+  .advice__line-divisor {
+    padding: 0.5px 63px;
+  }
+}
